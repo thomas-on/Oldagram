@@ -70,7 +70,7 @@ function renderPosts(allPosts) {
     //     renderEachPost(post, count);
     //     count ++;
     // })
-}
+    }
 }
 
 function likeThePost(index) {
@@ -96,5 +96,5 @@ function likeThePost(index) {
     }
 }
 
-renderPosts(posts)
+renderPosts(posts);
 
