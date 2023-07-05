@@ -1,0 +1,131 @@
+/* Downloded and saved the ttf files in font folder
+Load in the font faces and call them in repsetive selectors */
+@font-face{
+  font-family: "Source Sans Pro bold";
+  src: url("../font/source-sans-pro.bold.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Source Sans Pro regular";
+    src: url("../font/source-sans-proregular.ttf") format("truetype");
+}
+
+
+* { /* Universal selector */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Box width and height includes all except margin */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #fef9ef;
+    font-family: "Source Sans Pro bold"; 
+}
+
+/* Layout  */
+
+.container {
+    width: 300px;
+    height: 617px;
+    margin: 10px;
+}
+
+header,
+.header-post, 
+.footer-post {
+    padding: 10px;
+    display: flex;
+    
+}
+
+.header {
+    justify-content: space-between;
+    height: 75px;
+    background-color: white;
+    border-bottom: solid 1px #c4c4c4;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.post {
+    margin: 2px auto;
+    background-color: white;
+}
+
+.header-post {
+     gap: 20px;
+}
+
+.post-info{
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.footer-post{
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-post p {
+    margin-top: 5px;
+    margin-bottom: 50px
+}
+
+/* Images */
+
+.main-logo {
+	width: 127px;
+	height: 55px;
+}    
+
+.portrait-avatar,
+.user-avatar {
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}  
+
+.main-logo,
+.user-avatar {
+    margin: 10px;
+}
+
+.post-image{
+    width: 100%;
+}
+
+.icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Others */
+
+.post-info,
+.user-text {
+    font-family: "Source Sans Pro regular";
+}
+
+@media (hover: hover) {
+    .heart-icon:hover{
+        content: url('images/icon-heart-hover.png');
+    }
+    
+    .share-icon:hover{
+        content: url('images/icon-dm-hover.png');
+    }
+    
+    .comment-icon:hover{
+        content: url(images/icon-comment-hover.png);
+    }
+}
