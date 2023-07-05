@@ -62,15 +62,14 @@ function renderEachPost(postObject,id) {
 // renderEachPost(posts[0],1)
 
 function renderPosts(allPosts) {
-    for (i = 0; i < allPosts.length; i++) {
-        renderEachPost(allPosts[i],i);
+    // for (i = 0; i < allPosts.length; i++) {
+    //     renderEachPost(allPosts[i],i);
     
-    // let count = 0;
-    // allPosts.forEach(post => {
-    //     renderEachPost(post, count);
-    //     count ++;
-    // })
-    }
+    let count = 0;
+    allPosts.forEach(post => {
+        renderEachPost(post, count);
+        count ++;
+    })
 }
 
 function likeThePost(index) {
